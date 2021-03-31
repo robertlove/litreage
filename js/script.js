@@ -23,9 +23,9 @@ $('#weight, #unit').change(function() {
 
   volumeExpert = weightPounds / 6;
 
-  weightPounds = weightPounds.toFixed(1);
-  weightKilograms = weightKilograms.toFixed(1);
-  volumeExpert = volumeExpert.toFixed(1);
+  weightPounds = weightPounds.toFixed(2);
+  weightKilograms = weightKilograms.toFixed(2);
+  volumeExpert = volumeExpert.toFixed(2);
 
   $('#weight-pounds').text(weightPounds);
   $('#weight-kilograms').text(weightKilograms);
