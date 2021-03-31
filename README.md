@@ -10,6 +10,10 @@ https://www.youtube.com/watch?v=VC27e24abDc
 
 Open `index.html` in a browser.
 
+```
+purgecss --css css/bootstrap.css --content index.html --output css/style.css
+```
+
 ## Contributing
 
 See [Contributing](https://github.com/robertlove/.github/blob/master/CONTRIBUTING.md).
