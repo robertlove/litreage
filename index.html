@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Surfboard liter range calculator</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-white border-bottom shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="" width="24" height="24" class="d-inline-block align-text-top">
+          Surf 'n Show
+        </a>
+      </div>
+    </nav>
+    <header class="bg-light mb-4">
+      <div class="container">
+        <h1 class="m-0 py-4 lead">Surfboard liter range calculator</h1>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <form class="mb-4">
+          <div class="row">
+            <div class="col">
+              <input name="weight" type="number" min="1" max="1000" value="160" class="form-control" id="weight">
+            </div>
+            <div class="col">
+              <select name="unit" class="form-select" id="unit">
+                <option value="lb" selected>Pounds (lbs)</option>
+                <option value="kg">Kilograms (kgs)</option>
+              </select>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <table class="table table-bordered mb-4">
+          <tbody>
+            <tr>
+              <th scope="row">Weight (<abbr title="Pounds">lbs</abbr>)</th>
+              <td class="font-monospace text-end"><span id="weight-pounds">160.0</span></td>
+            </tr>
+            <tr>
+              <th scope="row">Weight (<abbr title="Kilograms">kgs</abbr>)</th>
+              <td class="font-monospace text-end"><span id="weight-kilograms">72.6</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Level</th>
+              <th scope="col">Volume (<abbr title="Liters">ltrs</abbr>)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Pro/Expert</td>
+              <td class="font-monospace"><span id="volume-expert">26.7</span></td>
+            </tr>
+            <tr>
+              <td>Advanced</td>
+              <td class="font-monospace"><span id="volume-advanced">???</span></td>
+            </tr>
+            <tr>
+              <td>Intermediate</td>
+              <td class="font-monospace"><span id="volume-intermediate">???</span></td>
+            </tr>
+            <tr>
+              <td>Beginner</td>
+              <td class="font-monospace"><span id="volume-beginner">???</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <!-- <div class="bg-dark">
+      <div class="container">
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/VC27e24abDc" title="Surf Tip: How to Dial in Your Surfboard Liter Range" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
