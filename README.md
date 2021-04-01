@@ -11,7 +11,7 @@ https://www.youtube.com/watch?v=VC27e24abDc
 Open `index.html` in a browser.
 
 ```
-purgecss --css css/bootstrap.css --content index.html --output css/style.css
+purgecss --config ./purgecss.config.js
 ```
 
 ## Contributing
