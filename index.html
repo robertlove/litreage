@@ -10,8 +10,8 @@
   <body>
     <nav class="navbar navbar-light bg-white border-bottom shadow-sm">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="img/logo.png" alt="" width="24" height="24" class="d-inline-block align-text-top">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/logo.png" alt="Surf 'n Show" width="24" height="24" class="d-inline-block align-text-top">
           Surf 'n Show
         </a>
       </div>
@@ -55,38 +55,52 @@
         <table class="table">
           <thead>
             <tr>
+              <th scope="col">&nbsp;</th>
+              <th scope="col" colspan="3" class="text-end">Volume (<abbr title="Liters">ltrs</abbr>)</th>
+            </tr>
+            <tr>
               <th scope="col">Level</th>
-              <th scope="col">Volume (<abbr title="Liters">ltrs</abbr>)</th>
+              <th scope="col" class="text-end">Low</th>
+              <th scope="col" class="text-end bg-light">Medium</th>
+              <th scope="col" class="text-end">High</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Pro/Expert</td>
-              <td class="font-monospace text-end"><span id="volume-expert">26.67</span></td>
+              <td class="font-monospace text-end"><span id="expert-low">25.00</span></td>
+              <td class="font-monospace text-end bg-light"><span id="expert-medium">26.67</span></td>
+              <td class="font-monospace text-end"><span id="expert-high">27.00</span></td>
             </tr>
             <tr>
               <td>Advanced</td>
-              <td class="font-monospace text-end"><span id="volume-advanced">???</span></td>
+              <td class="font-monospace text-end"><span id="advanced-low">27.67</span></td>
+              <td class="font-monospace text-end bg-light"><span id="advanced-medium">28.17</span></td>
+              <td class="font-monospace text-end"><span id="advanced-high">28.67</span></td>
             </tr>
             <tr>
               <td>Intermediate</td>
-              <td class="font-monospace text-end"><span id="volume-intermediate">???</span></td>
+              <td class="font-monospace text-end"><span id="intermediate-low">29.67</span></td>
+              <td class="font-monospace text-end bg-light"><span id="intermediate-medium">30.17</span></td>
+              <td class="font-monospace text-end"><span id="intermediate-high">30.67</span></td>
             </tr>
             <tr>
               <td>Beginner</td>
-              <td class="font-monospace text-end"><span id="volume-beginner">???</span></td>
+              <td class="font-monospace text-end"><span id="beginner-low">31.67</span></td>
+              <td class="font-monospace text-end bg-light"><span id="beginner-medium">32.67</span></td>
+              <td class="font-monospace text-end"><span id="beginner-high">33.67</span></td>
             </tr>
           </tbody>
         </table>
       </div>
     </section>
-    <!-- <div class="bg-dark">
+    <div class="bg-dark">
       <div class="container">
         <div class="ratio ratio-16x9">
           <iframe src="https://www.youtube.com/embed/VC27e24abDc" title="Surf Tip: How to Dial in Your Surfboard Liter Range" allowfullscreen></iframe>
         </div>
       </div>
-    </div> -->
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
