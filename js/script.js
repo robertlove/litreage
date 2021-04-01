@@ -1,23 +1,29 @@
-$('#weight, #unit').change(function() {
+var weight = document.getElementById('weight');
+var unit = document.getElementById('unit');
+var weightValue;
+var unitValue;
+var coefficient = 0.45359237;
+var weightPounds;
+var weightKilograms;
+var volumeExpert;
+var volumeAdvanced;
+var volumeIntermediate;
+var volumeBeginner;
 
-  var weight = parseFloat($('#weight').val());
-  var unit = $('#unit').val();
+function update() {
 
-  var coefficient = 0.45359237;
-  var weightPounds;
-  var weightKilograms;
-  var volumeExpert;
-  var volumeAdvanced;
-  var volumeIntermediate;
-  var volumeBeginner;
+  weightValue = parseFloat(weight.value);
+  unitValue = unit.value;
 
-  if (unit == 'lb') {
-    weightPounds = weight;
+  console.log(weightValue, unitValue);
+
+  if (unitValue == 'lb') {
+    weightPounds = weightValue;
     weightKilograms = weightPounds * coefficient;
   }
 
-  if (unit == 'kg') {
-    weightKilograms = weight;
+  if (unitValue == 'kg') {
+    weightKilograms = weightValue;
     weightPounds = weightKilograms / coefficient;
   }
 
@@ -27,8 +33,15 @@ $('#weight, #unit').change(function() {
   weightKilograms = weightKilograms.toFixed(2);
   volumeExpert = volumeExpert.toFixed(2);
 
-  $('#weight-pounds').text(weightPounds);
-  $('#weight-kilograms').text(weightKilograms);
-  $('#volume-expert').text(volumeExpert);
+  document.getElementById('weight-pounds').textContent = weightPounds;
+  document.getElementById('weight-kilograms').textContent = weightKilograms;
+  document.getElementById('volume-expert').textContent = volumeExpert;
+}
 
+weight.addEventListener('change', (event) => {
+  update();
+});
+
+unit.addEventListener('change', (event) => {
+  update();
 });
