@@ -50,8 +50,8 @@ function update() {
   for (level in rules) {
     for (range in rules[level]) {
       id = `${level}-${range}`;
-      levelVolume = volume + rules[level][range];
-      document.getElementById(id).textContent = levelVolume.toFixed(2);
+      levelRangeVolume = volume + rules[level][range];
+      document.getElementById(id).textContent = levelRangeVolume.toFixed(2);
     }
   }
 
