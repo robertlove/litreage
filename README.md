@@ -4,7 +4,9 @@ This is a website that implements the approach to finding your surfboard volume 
 
 ## Installation
 
-`$ git clone https://github.com/robertlove/volume.git`
+1. Install [PurgeCSS](https://purgecss.com/)
+1. Install [clean-css](https://github.com/jakubpawlowicz/clean-css)
+1. `$ git clone https://github.com/robertlove/volume.git`
 
 ## Usage
 
@@ -12,12 +14,16 @@ This is a website that implements the approach to finding your surfboard volume 
 
 Open `index.html` in a browser.
 
-### Removing unused CSS
-
-The site uses [Boostrap](https://getbootstrap.com/) for styling and [PurgeCSS](https://purgecss.com/) to remove unused CSS. To remove unused CSS, first install PurgeCSS then run:
+### Remove unused CSS
 
 ```
-purgecss --config ./purgecss.config.js
+$ purgecss --config ./purgecss.config.js
+```
+
+### Minify CSS
+
+```
+$ cleancss -o css/style.css css/style.css
 ```
 
 ## Contributing
