@@ -27,13 +27,19 @@
       <div class="container">
         <form>
           <div class="row">
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-4 mb-2 mb-md-0">
               <input name="weight" type="number" min="1" max="1000" value="160" class="form-control" id="weight">
             </div>
-            <div class="col">
+            <div class="col-12 col-sm-6 col-md-4 mb-2 mb-md-0">
               <select name="unit" class="form-select" id="unit">
                 <option value="lb" selected>Pounds (lbs)</option>
                 <option value="kg">Kilograms (kgs)</option>
+              </select>
+            </div>
+            <div class="col-12 col-md-4">
+              <select name="construction" class="form-select" id="construction">
+                <option value="pu" selected>Polyurethane (PU/PE)</option>
+                <option value="eps">Expanded Polystyrene (EPS/Epoxy)</option>
               </select>
             </div>
           </div>
