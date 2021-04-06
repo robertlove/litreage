@@ -1,6 +1,7 @@
 // The weight and unit form controls
 weight = document.getElementById('weight');
 unit = document.getElementById('unit');
+construction = document.getElementById('construction');
 
 // The coefficient for converting lbs to kgs and vice versa
 coefficient = 0.45359237;
@@ -33,6 +34,7 @@ function update() {
 
   weightValue = parseFloat(weight.value);
   unitValue = unit.value;
+  constructionValue = construction.value;
 
   if (unitValue == 'lb') {
     weightPounds = weightValue;
@@ -51,6 +53,9 @@ function update() {
     for (range in rules[level]) {
       id = `${level}-${range}`;
       levelRangeVolume = volume + rules[level][range];
+      if (constructionValue == 'eps') {
+        levelRangeVolume = levelRangeVolume - 0.5;
+      }
       document.getElementById(id).textContent = levelRangeVolume.toFixed(2);
     }
   }
@@ -62,5 +67,9 @@ weight.addEventListener('change', (event) => {
 });
 
 unit.addEventListener('change', (event) => {
+  update();
+});
+
+construction.addEventListener('change', (event) => {
   update();
 });
