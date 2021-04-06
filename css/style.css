@@ -525,6 +525,10 @@ iframe {
   font-family: var(--bs-font-monospace) !important;
 }
 
+.fw-bolder {
+  font-weight: bolder !important;
+}
+
 .text-end {
   text-align: right !important;
 }
