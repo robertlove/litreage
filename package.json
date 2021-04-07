@@ -4,8 +4,10 @@
   "description": "Surf n' Show surfboard volume calculator",
   "main": "index.html",
   "scripts": {
-    "build:css": "purgecss --css css/bootstrap.css --content index.html -o css/style.css\ncleancss -o css/style.min.css css/style.css",
-    "build:js": "minify js/script.js > js/script.min.js"
+    "build": "run-s build:*",
+    "build:purgecss": "purgecss --css css/bootstrap.css --content index.html -o css/style.css",
+    "build:cleancss": "cleancss -o css/style.min.css css/style.css",
+    "build:minify": "minify js/script.js > js/script.min.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
   "devDependencies": {
     "clean-css": "",
     "minify": "",
+    "npm-run-all": "",
     "purgecss": ""
   }
 }
