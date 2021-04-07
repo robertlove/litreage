@@ -4,7 +4,8 @@
   "description": "Surf n' Show surfboard volume calculator",
   "main": "index.html",
   "scripts": {
-    "build:css": "purgecss --css css/bootstrap.css --content index.html -o css/style.css\ncleancss -o css/style.min.css css/style.css"
+    "build:css": "purgecss --css css/bootstrap.css --content index.html -o css/style.css\ncleancss -o css/style.min.css css/style.css",
+    "build:js": "minify js/script.js > js/script.min.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "homepage": "https://github.com/robertlove/volume#readme",
   "devDependencies": {
     "clean-css": "",
+    "minify": "",
     "purgecss": ""
   }
 }

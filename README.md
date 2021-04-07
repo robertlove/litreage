@@ -19,6 +19,12 @@ Open `index.html` in a browser.
 $ npm run build:css
 ```
 
+### Building JS
+
+```
+$ npm run build:js
+```
+
 ## Contributing
 
 See [Contributing](https://github.com/robertlove/.github/blob/master/CONTRIBUTING.md).
