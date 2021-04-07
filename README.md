@@ -5,7 +5,7 @@ This is a website that implements the approach to finding your surfboard volume 
 ## Installation
 
 1. `$ git clone https://github.com/robertlove/volume.git`
-1. `$ npm install`
+1. `$ yarn`
 
 ## Usage
 
@@ -13,16 +13,10 @@ This is a website that implements the approach to finding your surfboard volume 
 
 Open `index.html` in a browser.
 
-### Building CSS
+### Building CSS and JS
 
 ```
-$ npm run build:css
-```
-
-### Building JS
-
-```
-$ npm run build:js
+$ yarn build
 ```
 
 ## Contributing
