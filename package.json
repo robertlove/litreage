@@ -1,0 +1,26 @@
+{
+  "name": "volume",
+  "version": "1.0.0",
+  "description": "Surf n' Show surfboard volume calculator",
+  "main": "index.html",
+  "scripts": {
+    "build:css": "purgecss --css css/bootstrap.css --content index.html -o css/style.css\ncleancss -o css/style.min.css css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertlove/volume.git"
+  },
+  "keywords": [
+    "surfing"
+  ],
+  "author": "Robert Love <robertjohnlove@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/robertlove/volume/issues"
+  },
+  "homepage": "https://github.com/robertlove/volume#readme",
+  "devDependencies": {
+    "clean-css": "",
+    "purgecss": ""
+  }
+}
